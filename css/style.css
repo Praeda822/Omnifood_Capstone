@@ -1,0 +1,634 @@
+.header {
+	position: relative;
+	box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 5rem;
+	/* padding: 1rem 2rem; */
+}
+
+.section-hero {
+	background-color: #f3faeb;
+	padding: 8rem 0 9.6rem 0;
+	height: 100%;
+}
+
+.hero {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0 2.7rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 6rem;
+	align-items: center;
+}
+
+.logo {
+	height: 3rem;
+	width: 18rem;
+}
+
+.main-nav-list {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	flex-direction: space-between;
+}
+
+.main-nav-item:link,
+.main-nav-item:visited {
+	display: inline-block;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #2d2f31;
+	text-decoration: none;
+	padding: 1.4rem 2.5rem;
+	height: 100%;
+	line-height: 1.75rem;
+	transition: 300ms;
+}
+
+.main-nav-item:hover,
+.main-nav-item:active {
+	background-color: #c5e499;
+}
+
+.main-nav-item.nav-cta:link,
+.main-nav-item.nav-cta:visited {
+	font-weight: 500;
+	border-radius: 0.4rem;
+	border: solid 1px #7cb42d;
+	background-color: transparent;
+	color: #7cb42d;
+}
+
+.main-nav-item.nav-cta:hover,
+.main-nav-item.nav-cta:active {
+	background-color: #8ac832;
+	color: #fff;
+	transition: 300ms;
+}
+
+/*MOBILE NAVIGATION*/
+
+.btn-mobile-nav {
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	display: none;
+}
+
+.icon-mobile-nav {
+	height: 4.8rem;
+	width: 4.8rem;
+	color: #2d2f31;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+	display: none;
+}
+
+/*STICKY NAVIGATION*/
+.sticky {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.97);
+	z-index: 999;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.testimonial-section {
+	margin-top: 6.9rem;
+	display: grid;
+	height: 100%;
+	width: 100%;
+	place-items: center;
+	/* background: #8ac832; */
+}
+
+.testimonial {
+	margin-top: 5rem;
+	max-width: 1200px;
+	padding: 0 0.2rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.testimonial .testimonial-box {
+	background: #fff;
+	border-radius: 0.3rem;
+	padding: 2.5rem;
+	/* width: calc(100% - 5rem); */
+	width: calc(25% - 1rem);
+	box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #909399;
+	line-height: 2.4rem;
+	padding-bottom: 1.2rem;
+}
+
+.testimonial .testimonial-box i.fa-quote-left {
+	font-size: 2rem;
+	color: #8ac832;
+	padding-bottom: 0.8rem;
+}
+
+.testimonial .testimonial-box .testimonial-content {
+	padding-top: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.testimonial .testimonial-box .info .name {
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: #2d2f31;
+	padding-bottom: 0.2rem;
+}
+
+.testimonial .testimonial-box .info .job {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #7cb42d;
+}
+
+.testimonial .testimonial-box .info .stars {
+	margin-top: 0.8rem;
+}
+
+.testimonial-box .testimonial-content .image {
+	width: 7.5rem;
+	height: 7.5rem;
+	padding: 0.3rem;
+	background: #7cb42d;
+	border-radius: 50%;
+}
+
+.testimonial-box .testimonial-content .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 0.2rem solid #fff;
+}
+
+.section-featured.container {
+	padding: 0;
+	margin-top: 4.8rem;
+}
+
+.section-featured {
+	padding: 4.8rem 3.2rem 0;
+}
+
+.heading-featured-in {
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: #909399;
+	letter-spacing: 0.75px;
+	margin-bottom: 2.4rem;
+}
+
+.logos {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 1.6rem;
+}
+
+.logos img {
+	height: 3rem;
+	filter: brightness(0) opacity(50%);
+}
+.section-how {
+	padding: 9.6rem 0;
+}
+
+.step-number {
+	font-size: 9rem;
+	font-weight: 600;
+	color: #909399;
+	margin-bottom: 1.2rem;
+}
+
+.step-description {
+	font-size: 1.8rem;
+	line-height: 1.6;
+}
+
+.step-img-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	/* margin: auto; */
+}
+
+.step-img-box::before,
+.step-img-box::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	border-radius: 50%;
+}
+
+.step-img-box::before {
+	width: 70%;
+	padding-bottom: 70%;
+	background-color: #c5e499;
+	z-index: -2;
+}
+
+.step-img-box::after {
+	width: 57%;
+	padding-bottom: 57%;
+	background-color: #8ac832;
+	z-index: -1;
+}
+
+.step-img {
+	width: 45%;
+}
+
+.section-meals {
+	padding: 9.6rem 0;
+}
+
+.meal-tags {
+	margin-bottom: 1.2rem;
+}
+
+.meal {
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+	border-radius: 1.1rem;
+	overflow: hidden;
+	transition: all 400ms;
+}
+
+.meal:hover {
+	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+	transform: translateY(-0.6rem);
+}
+
+.meal-content {
+	padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+	margin-bottom: 1.2rem;
+	display: flex;
+	gap: 0.4rem;
+}
+
+.tag {
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #2d2f31;
+	border-radius: 10rem;
+	font-weight: 600;
+}
+
+.tag--vegetarian {
+	background-color: #8ac832;
+}
+
+.tag--vegan {
+	background-color: #c5e499;
+}
+
+.tag--paleo {
+	background-color: #ffd43b;
+}
+
+.meal-title {
+	font-size: 2.4rem;
+	color: #2d2f31;
+	font-weight: 600;
+	margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.meal-attribute {
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.meal-icon {
+	height: 2.4rem;
+	width: 2.4rem;
+	color: #8ac832;
+}
+
+.meal-img {
+	width: 100%;
+}
+
+.all-recipes {
+	font-size: 1.8rem;
+}
+
+.section-pricing {
+	padding: 9.6rem 0;
+}
+
+.pricing-plan {
+	border-radius: 1.1rem;
+	width: 75%;
+	box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+.pricing-plan--starter {
+	justify-self: end;
+	border: 0.2rem solid #f3faeb;
+	padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+	background-color: #f3faeb;
+	padding: 4.8rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+	content: "Best Value";
+	position: absolute;
+	top: 6%;
+	right: -18%;
+
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #2d2f31;
+	background-color: #ffd43b;
+	padding: 0.8rem 8rem;
+	transform: rotate(45deg);
+}
+
+.plan-header {
+	text-align: center;
+	margin-bottom: 4.8rem;
+}
+
+.plan-name {
+	color: #8ac832;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.75;
+	margin-bottom: 3rem;
+}
+
+.plan-price {
+	font-size: 6rem;
+	font-weight: 600;
+	color: #2d2f31;
+	margin-bottom: 2.5rem;
+}
+
+.plan-price span {
+	font-size: 2.4rem;
+	font-weight: 600;
+	margin-right: 0.8rem;
+}
+.plan-text {
+	font-size: 1.8rem;
+	line-height: 1.6;
+	margin-bottom: 3.2rem;
+	color: #909399;
+}
+
+.plan-sign-up {
+	text-align: center;
+	margin-top: 4.8rem;
+}
+
+.plan-details {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.feature-icon {
+	color: #7cb42d;
+	height: 3.2rem;
+	width: 3.2rem;
+	background-color: #f3faeb;
+	margin-bottom: 3.6rem;
+	padding: 1.6rem;
+	border-radius: 50%;
+}
+
+.feature-title {
+	font-size: 2.4rem;
+	color: #2d2f31;
+	font-weight: 700;
+	margin-bottom: 1.6rem;
+}
+
+.feature-text {
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 1.6;
+	color: #2d2f31;
+}
+
+/* CTA SECTION */
+
+.section-cta {
+	padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-color: #8ac832;
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
+	border-radius: 1.1rem;
+	background-image: linear-gradient(to right bottom, #c5e499, #8ac832);
+	overflow: hidden;
+}
+
+.cta-text-box {
+	padding: 4.8rem 6.5rem 6.5rem 6.5rem;
+	color: #272e1f;
+}
+
+.cta .heading-secondary {
+	color: inherit;
+	margin-bottom: 4.8rem;
+}
+
+.cta-text {
+	font-size: 1.8rem;
+	line-height: 1.8;
+	margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(150, 207, 69, 0.15),
+			rgba(137, 200, 50, 0.15)
+		),
+		url(../img/eating.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.cta-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 3.2rem;
+	row-gap: 2.4rem;
+}
+
+.cta-form label {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-bottom: 1.2rem;
+}
+
+/*group input and select together for design consistency*/
+
+.cta-form input,
+.cta-form select {
+	width: 100%;
+	padding: 1.2rem;
+	font-size: 1.8rem;
+	/*declare inherit to input, button, select, so that it inherits the font-family AND color from the body element*/
+	font-family: inherit;
+	color: inherit;
+	/*always remove the default border from inputs*/
+	border: none;
+	background-color: #f3faeb;
+	/*gives it that off-shade of green*/
+	border-radius: 0.9rem;
+	box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.1);
+	/* 0 for horzontal, 1.2 for vertical, 2.4 for blur, 0.1 for spread*/
+	/*makes the input field sort of pop-off the page a bit*/
+}
+
+.cta-form input::placeholder {
+	color: #b7b7b7;
+}
+
+/* EXTREMELY IMPORTANT TO DECLARE FOCUS STATES FOR ACCESSIBILITY */
+.cta *:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.8rem rgba(243, 250, 235, 0.5);
+}
+
+/* ==================================
+	FOOTER
+	==================================
+*/
+
+/*Removing the padding from the .footer container fixes the logo problem. The logo is now centered. WTF lol*/
+
+/* I am dumb and forgot to hyphen the footer-logo. Diiiiickhead. */
+.footer {
+	padding: 12.8rem 0;
+	border-top: 0.1rem solid #f1f1f1;
+}
+
+.grid--footer {
+	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-logo {
+	display: block;
+	margin-bottom: 4rem;
+}
+
+.social-links {
+	list-style: none;
+	display: flex;
+	gap: 2.4rem;
+}
+
+/* standard height of many icons is 24px, so we can use that as a base for our height and width */
+.social-icon {
+	height: 2.4rem;
+	width: 2.4rem;
+}
+
+.copyright {
+	font-size: 1.4rem;
+	color: #909399;
+	line-height: 1.6;
+	margin-top: auto;
+}
+
+.footer-heading {
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 4rem;
+	color: #2b2c2e;
+}
+
+.contacts {
+	font-style: normal;
+	font-size: 1.4rem;
+	line-height: 1.6;
+}
+
+.contacts p:first-child {
+	margin-bottom: 2.4rem;
+	color: #909399;
+	font-size: 1.45rem;
+}
+
+.footer-nav {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: #909399;
+	transition: all 300ms;
+}
+
+.footer-link:hover,
+.footer-link:active {
+	/* color: #2d2f31; */
+	color: #2b2c2e;
+}

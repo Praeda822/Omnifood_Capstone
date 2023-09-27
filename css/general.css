@@ -1,0 +1,280 @@
+/*  
+
+--- TYPOGRAPHY ---
+
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font-weights:
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line-heights:
+   Default: 1
+   Small: 1.05
+   Medium: 1.2
+   Paragraph default: 1.6
+
+   - Letter spacing:
+   - 0.5px
+   -0.75px
+      
+   
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--- COLORS ---
+ 
+- Main color: #8ac832
+
+- Headings Color: #2d2f31
+- Contrasting White headings color: #ffffff
+- Paragraph text-light: #909399
+- #f3faeb
+
+
+--- SHADOWS  ---
+
+--- BORDERS  ---
+
+--- WHITSPACE ---
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+
+
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	line-height: 1.15;
+	overflow-x: hidden;
+	/* scroll-behavior: smooth; */
+}
+
+body {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	color: #333;
+	background: #fff;
+	/*only works if there's nothing absolutely positioned*/
+	overflow-x: hidden;
+}
+
+::selection {
+	background: rgba(138, 200, 50, 0.5);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+	font-weight: 700;
+	color: #2d2f31;
+	letter-spacing: -0.5px;
+}
+
+.heading-primary {
+	font-size: 5.2rem;
+	line-height: 1.05;
+	margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+	font-size: 4.4rem;
+	line-height: 1.2;
+	margin-bottom: 9.6rem;
+	text-align: center;
+}
+
+.heading-tertiary {
+	font-size: 3.2rem;
+	line-height: 1.2;
+	margin-bottom: 3rem;
+}
+
+.subheading {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-bottom: 1.6rem;
+	text-align: center;
+	line-height: 1.2;
+	letter-spacing: 0.75px;
+	color: #909399;
+}
+
+.hero-description {
+	font-size: 1.7rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #909399;
+	margin-bottom: 3.8rem;
+}
+.btn,
+.btn:link,
+.btn:visited {
+	background-color: #8ac832;
+	font-size: 2rem;
+	font-weight: 600;
+	font-family: inherit;
+	color: #fff;
+	padding: 1.2rem 2.4rem;
+	border-radius: 0.4rem;
+	display: inline-block;
+	border-style: none;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 300ms;
+}
+
+.btn--full:link,
+.btn--full:visited {
+	background-color: #8ac832;
+	color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+	background-color: #7cb42d;
+	color: #fff;
+}
+
+.btn--form {
+	border: none;
+	/* background-color: #f3faeb; */
+	/* color: inherit; */
+	background-color: #272e1f;
+	color: #f3faeb;
+	align-self: end;
+	padding: 1.2rem;
+	border-radius: 2rem;
+}
+
+.btn--form:hover,
+.btn--full:active {
+	background-color: #1f251a;
+	color: #fff;
+}
+
+.link:link,
+.link:visited {
+	display: inline-block;
+	color: #8ac832;
+	text-decoration: none;
+	border-bottom: 0.1rem solid currentColor;
+	padding-bottom: 0.2rem;
+	transition: all 300ms;
+}
+
+.link:hover,
+.link:active {
+	color: #7cb42d;
+	border-bottom: 0.1rem solid transparent;
+}
+
+.list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.list-item {
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+	gap: 1.8rem;
+}
+
+.list-icon {
+	width: 3rem;
+	height: 3rem;
+	color: #8ac832;
+}
+
+/* removes the outline from tab-targetting buttons */
+/* NEVER JUST LEAVE OUTLINE: NONE */
+*:focus {
+	outline: none;
+	/* outline: 0.4rem dotted #8ac832;
+	outline-offset: 0.6rem; */
+	box-shadow: 0 0 0 0.8rem rgba(137, 200, 50, 0.5);
+}
+
+.hero-img {
+	width: 100%;
+}
+
+/* HELPER CLASSES */
+
+.container {
+	max-width: 120rem;
+	padding: 0 3.2rem;
+	margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	column-gap: 6.4rem;
+	row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+	margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 6.4rem;
+}
+
+.grid--3-cols {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 6.4rem;
+}
+
+.grid--4-cols {
+	grid-template-columns: repeat(4, 1fr);
+	gap: 6.4rem;
+}
+
+.grid--5-cols {
+	grid-template-columns: repeat(5, 1fr);
+	gap: 6.4rem;
+}
+
+.grid--center-v {
+	align-items: center;
+}
+
+/* HELPER SETTINGS */
+
+.margin-right-sm {
+	margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+	margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+	text-align: center;
+}
+
+strong {
+	font-weight: 500;
+}
